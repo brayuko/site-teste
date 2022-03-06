@@ -9,6 +9,9 @@
     --cor4: #d48544;
     --cor5: rgba(58, 58, 58, 0.808);
     --cor6: black;
+    --cor7: #57A695;
+    --cor8: #687675;
+    --cor9: #606062;
 
     --fonte-padrao: 'arial', verdana, helvetica;
     --fonte-destaque: ;
@@ -28,14 +31,20 @@ body {
 }
 
 header {
-    background-image: linear-gradient(var(--cor5), var(--cor6));
+    background-image: linear-gradient(var(--cor8), var(--cor6));
     margin: 0px;
     padding: 15px 0px 35px 0px;
 }
 
-header img {
+
+header img  {
     max-width: 100px;
     padding: 50px 0px 0px 30px ;
+  }
+
+  header div {
+      padding: ;
+      margin: 0px 0px 0px 0px;
   }
 
 header h1 {
