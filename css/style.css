@@ -24,12 +24,19 @@
     padding:  0px;
    }
 
-body {
+html, body {
+    min-height: 100vh;
     background-color: var(--cor4) ;
     margin:0px;
     padding:0px;
         
 }
+
+
+
+
+
+
 
 .container {
     position: relative;
@@ -40,25 +47,25 @@ body {
   }
   
   #texto {
-    position: absolute;
-    font-size: 20px;
+    position: absolute;    
+    font-size: 18px;
     font-weight: bold;
-    left: 10px;
-    top: 215px;
+    left: 15px;
+    top: 10px;
     color: var(--cor0);
     text-shadow: 1px 1px 0px var(--cor6);
   }
-  
-  .container{
-     width: 50px;
-     height: 50px;
+
+  .container {
+     width: 100px;
+     height: 100px;
      overflow: hidden;
      border: 0px solid #000;
   }
   
   .container {
-     width: 50%;
-     height: 50%;
+     width: 80%;
+     height: 80%;
      -webkit-transition: -webkit-transform .6s ease;
      transition: transform .6s ease;
   }
@@ -67,6 +74,13 @@ body {
      -webkit-transform: scale(1.1);
      transform: scale(1.1);
   }
+
+
+
+
+
+
+
 
 header {
     background-image: linear-gradient(var(--cor8), var(--cor6));
@@ -116,6 +130,10 @@ header div.imagens_home {
 
 
 
+
+
+
+
 nav {
     background-image: linear-gradient(var(--cor5), var(--cor6));
     text-align: left;
@@ -134,9 +152,15 @@ nav {
 }
 
 nav >a:hover {
-    background-color: ;
+    background-color: var(--cor) ;
     color: var(--cor1);
 }
+
+
+
+
+
+
 
 article {
     background-color: var(--cor0);
@@ -152,6 +176,27 @@ article p {
     padding: 0px 0px 10px 5px;
 }
 
+article.artigo2 {
+    background-color: var(--cor0);
+    padding: 10px;
+    text-align: justify;
+}
+
+article.artigo2 h2 {
+    padding: 0px 0px 10px 0px;
+}
+
+article.artigo2 p {
+    padding: 0px 0px 10px 5px;
+}
+
+
+
+
+
+
+
+
 main {
     background-color: white;
     min-width: 300px;
@@ -164,15 +209,24 @@ main {
     border-bottom-right-radius: 10px;
 }
 
+
+
+
 main img {
     width: 100%;
+    height: 100%;
+        
 }
+
 
 main img.pequena {
     max-width: 350px;
     display: block;
     margin: auto;
 }
+
+
+
 
 div.video {
     background-color: var(--cor6);
@@ -189,6 +243,54 @@ div.video > iframe {
     width: 90%;
     height: 90%;
 }
+
+
+
+
+
+
+
+
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height:2em;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+}
+
+section.imagem {
+    background-color: darkgrey;
+    color: white;
+    text-align: justify;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+    text-align: justify;
+}
+
+section.imagem > p {
+    background-color: black;
+    padding-right: 30px;
+    width: 400px;
+    text-align: justify;
+}
+
+section.normal > p {
+    background-color: white;
+    padding-right: 30px;
+    text-align: justify;
+}
+
+
+
+
+
+
 
 aside {
     background-color: var(--cor1);
@@ -228,22 +330,37 @@ aside >  p {
     color: white;  
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
+ }
+
+
 footer {
     background-image: linear-gradient(var(--cor5), var(--cor6));
-    padding: 10px 0px 100px 15px;
-    color: var(--cor1);
+    padding: 10px 0px 100px 15px;       
+}
+
+.alfanerd {
+    color: var(--cor1);    
     text-shadow: 2px 2px 0px var(--cor6);
     text-align: center;
     font-weight:bolder;
-    font-size: 1.5em;
+    font-size: 1.5em;    
     margin-top: 10px;
     margin: 0px 0px 1px 0px;
 }
 
+
 footer p {
     color: var(--cor0);
     font-weight:normal;
-    font-size: 0.6em;
+    font-size: 0.8em;
     text-shadow: 2px 2px 0px var(--cor6);
+    text-align: center;
 }
 

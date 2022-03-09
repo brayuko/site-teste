@@ -5,24 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artigos</title>
+
     <link rel="stylesheet" href="css/style.css">
-<style>
-    header {
-        background-image: url('image/nick10.jpg')
-        
-    }
 
-    header img  {
-    max-width: 100px;
-    padding: 50px 0px 0px 30px ;
-  }
+    <link rel="shortcut icon" href="image/AF.ico" type="image/x-icon">
 
-</style>
+    <style>
+        header {
+            background-image: url('image/nick10.jpg');
+            background-repeat: no-repeat;
+            background-size: cover; 
+            padding-bottom: 150px;           
+        }
+        .nick {
+            font-size: 35px;
+        }
+
+       
+    </style>
 
 </head>
 <body>
 
-    <header>
+    <header class="nick">
         <h1>Nick Fury</h1>
 
     </header>
@@ -47,10 +52,12 @@
 
                 <h2>10 – Super-Soldado</h2>
 
-                <picture>
-                    <source media="(max-width: 600px)" srcset="image/supersoldado.jpg">
-                    <img src="image/supersoldado.jpg" alt="foto ilustrativa">
-                </picture> 
+            
+                    <picture class="imagartigo" >
+                        <source media="(max-width: 600px)" srcset="image/supersoldado.jpg">
+                        <img src="image/supersoldado.jpg" alt="foto ilustrativa">
+                    </picture>
+                
         
                 <p>
                     Nicholas Fury nasceu no início do século XX e lutou pelos Estados Unidos na Segunda Guerra Mundial. Durante a invasão da Sicília, ele, juntamente com o soldado Fisk e o paraquedista canadense James Howlett, tentaram saquear uma casa, quando foram presos por superiores. <br>
@@ -60,7 +67,7 @@
         
                 <h2>9 – Arma X</h2>
 
-                <picture>
+                <picture class="imagartigo"> 
                     <source media="(max-width: 600px)" srcset="image/armax.jpg">
                     <img src="image/armax.jpg" alt="foto ilustrativa">
                 </picture> 
@@ -72,7 +79,7 @@
         
                 <h2>8 – Os Supremos</h2>
 
-                <picture>
+                <picture class="imagartigo"> 
                     <source media="(max-width: 600px)" srcset="image/ossupremos.jpg">
                     <img src="image/ossupremos.jpg" alt="foto ilustrativa">
                 </picture> 
@@ -84,7 +91,7 @@
         
                 <h2>7 – Peter Parker</h2>
 
-                <picture>
+                <picture class="imagartigo">
                     <source media="(max-width:600px)" srcset="image/peterparker.jpg">
                     <img src="image/peterparker.jpg" alt="peterparker">
                 </picture>
@@ -97,7 +104,7 @@
         
                 <h2>6 – Preso em outra dimensão</h2>
 
-                <picture>
+                <picture class="imagartigo"> 
                     <source media="(max-width: 600px)" srcset="image/outradimencao.jpg">
                     <img src="image/outradimencao.jpg" alt="foto ilustrativa">
                 </picture> 
@@ -110,7 +117,7 @@
         
                 <h2>5 – Esquadrão Supremo</h2>
 
-                <picture>
+                <picture class="imagartigo"> 
                     <source media="(max-width: 600px)" srcset="image/esquadrao.jpg">
                     <img src="image/esquadrao.jpg" alt="foto ilustrativa">
                 </picture>
@@ -121,7 +128,8 @@
                 </p>
         
             <h2>4 – Ultimatum</h2>
-                <picture media="(max-width: 600px)" srcset="img/ultimatum.jpg">
+                <picture class="imagartigo">
+                     <source  media="(max-width: 600px)" srcset="img/ultimatum.jpg">
                     <img src= "image/ultimatum.jpg" alt="foto ilustrativa">
                 </picture>
         
@@ -131,7 +139,8 @@
                 </p>
         
                 <h2>3 – Vingadores</h2>
-                <picture media="(max-width: 600px)" srcset="img/vingadoresvs.jpg">
+                <picture class="imagartigo">
+                     <source media="(max-width: 600px)" srcset="img/vingadoresvs.jpg">
                     <img src="img/vingadoresvs.jpg" alt="foto ilustrativa">
 
                 </picture>
@@ -142,7 +151,8 @@
                 </p>
         
                 <h2>2 – Vingadores vs Supremos</h2>
-                <picture media="(max-width: 600px)" srcset="img/vingadoresvs.jpg">
+                <picture class="imagartigo">
+                     <source media="(max-width: 600px)" srcset="img/vingadoresvs.jpg">
                     <img src="image/vingadoresvs.jpg" alt="foto ilustrativa">
                 </picture>
         
@@ -154,7 +164,8 @@
         
                 <h2>1 – De volta à S.H.I.E.L.D.</h2>
 
-                <picture media="(max-width: 600px)" srcset="img/devolta.jpg">
+                <picture class="imagartigo"> 
+                    <source media="(max-width: 600px)" srcset="img/devolta.jpg">
                     <img src="image/devolta.jpg" alt="foto ilustrativa">
                 </picture>
         
@@ -166,7 +177,11 @@
         </article>
     </main>
 
-    <footer> Alfa Nerd </footer>
+    <footer><a href="https://www.youtube.com/channel/UC743uIOkw60kD0TeztPD1Uw" target="_blank"><p class="alfanerd">Alfa Nerd</p></a>
+
+        <p>Site de pesquisa e noticia em geral</p>
+       
+    </footer>
     
 </body>
 </html>
