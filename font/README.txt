@@ -1,26 +1,32 @@
-Smooch Sans Variable Font
-=========================
+Josefin Sans Variable Font
+==========================
 
-This download contains Smooch Sans as both a variable font and static fonts.
+This download contains Josefin Sans as both variable fonts and static fonts.
 
-Smooch Sans is a variable font with this axis:
+Josefin Sans is a variable font with this axis:
   wght
 
-This means all the styles are contained in a single file:
-  SmoochSans-VariableFont_wght.ttf
+This means all the styles are contained in these files:
+  JosefinSans-VariableFont_wght.ttf
+  JosefinSans-Italic-VariableFont_wght.ttf
 
 If your app fully supports variable fonts, you can now pick intermediate styles
 that aren’t available as static fonts. Not all apps support variable fonts, and
-in those cases you can use the static font files for Smooch Sans:
-  static/SmoochSans-Thin.ttf
-  static/SmoochSans-ExtraLight.ttf
-  static/SmoochSans-Light.ttf
-  static/SmoochSans-Regular.ttf
-  static/SmoochSans-Medium.ttf
-  static/SmoochSans-SemiBold.ttf
-  static/SmoochSans-Bold.ttf
-  static/SmoochSans-ExtraBold.ttf
-  static/SmoochSans-Black.ttf
+in those cases you can use the static font files for Josefin Sans:
+  static/JosefinSans-Thin.ttf
+  static/JosefinSans-ExtraLight.ttf
+  static/JosefinSans-Light.ttf
+  static/JosefinSans-Regular.ttf
+  static/JosefinSans-Medium.ttf
+  static/JosefinSans-SemiBold.ttf
+  static/JosefinSans-Bold.ttf
+  static/JosefinSans-ThinItalic.ttf
+  static/JosefinSans-ExtraLightItalic.ttf
+  static/JosefinSans-LightItalic.ttf
+  static/JosefinSans-Italic.ttf
+  static/JosefinSans-MediumItalic.ttf
+  static/JosefinSans-SemiBoldItalic.ttf
+  static/JosefinSans-BoldItalic.ttf
 
 Get started
 -----------

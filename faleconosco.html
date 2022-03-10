@@ -8,7 +8,86 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    <link rel="shortcut icon" href="image/AF.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="image/AN.ico" type="image/x-icon">
+
+    <style>
+        body {
+            font-family: 'Arial', Helvetica, sans-serif;
+        }
+        table {
+            width: 400px;
+            height: 400px;
+            border-collapse: collapse;
+            border: 5px solid black;
+            position: center;
+        }
+        table.exemplo2 {
+            width: 300px;
+            height: 100px;
+            border-collapse: collapse;
+            border: 5px solid black;
+            position: relative;
+        }
+/* para colocar o cabeçaljo seguindo a rolagem do conteudo se usa 
+                position:relative; no corpo da tabela como acima e dentro da tabela se usa o codigoo abaixo 
+                position: sticky;
+                top: 0;
+                background-color: gray;*/
+        thead > tr > th {
+                position: sticky;
+                top: 0;
+                background-color: gray;
+        }
+        table.exemplo2 td, th { /* se usa  o ponto . para class e jogo da velha  # para id */
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left; /*Alinhamento horizontal*/
+            vertical-align: middle; /* Alinhamento Vertical pra colocar no meio se usa ao inves de center se usa middle */
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center; /*Alinhamento horizontal*/
+            vertical-align: middle; /* Alinhamento Vertical pra colocar no meio se usa ao inves de center se usa middle */
+        }
+        td.dado {
+            background-color: yellow;
+        }
+        td.numero {
+            text-align: right;
+        }
+        tr.linha{
+            background-color: gray;
+        }
+        td.num {
+            text-align: right;
+        }
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color:lightgray;
+        }
+
+        tbody > tr:nth-child(2n){ /* se usa essa semantica para visual zebrado se colocar (odd) (2n-1)eu faço ela começar a zebrar pela celula impar ou (even) (2n) pra começar como par*/
+            background-color: lightgray;
+        }
+
+        header {
+            position: relative;
+        }
+
+        nav {
+            position: sticky;
+                top: 0;
+                background-color:
+        }
+
+    </style>
 
 </head>
 <body>
@@ -24,8 +103,108 @@
     </nav>
     <main>
         <article>
+            <h2>Duvidas, entre em contato</h2>
 
         </article>
+        
+        
+        <!--Hierarquia de tabelas (Simples)
+                                 table = tabela
+                                 table row = linha DE tabela (TR)
+                                 table header = cabeçalho de tabela (TH)
+                                 table date = dados de tabela (TD) -->
+            
+
+        <table>
+            <tr> <!-- Primeira Linha-->
+                    <td>A1</td>
+                    <td class="dado">B1</td>
+                    <td class="numero">C1</td>
+            </tr>
+
+            <tr> <!-- Primeira Linha-->
+                <td>A2</td>
+                <td>B2</td>
+                <td class="numero">C2</td>
+        </tr>
+
+        <tr class="linha"> <!-- Primeira Linha-->
+            <td>A3</td>
+            <td >B3</td>
+            <td class="numero">C3</td>
+    </tr>
+
+    <tr> <!-- Primeira Linha-->
+        <td>A4</td>
+        <td >B4</td>
+        <td class="numero">C4</td>
+</tr>
+            
+        </table>
+        <h1>Anatomia para tabelas grandes</h1>
+
+<!-- Anatomia para tabelas grandes
+                TABLE 
+                    CAPTION = legenda
+                     THEAD = cabeçalho     
+                        TR, TD, TH                   
+                    TBODY = corpo                 
+                        TR, TD, TH                       
+                    TFOOT = rodape
+                        TR, TD, TH
+                     -->
+        <table class="exemplo2">
+            <caption>exemplo de tabela</caption>
+            <thead>
+                        <tr>
+                            <th scope="col">estado</th>
+                            <th scope="col" style="width: 100px;">populaçao</th> <!--Posso tambem usar estilo dentro da linha-->
+                        </tr>
+            </thead>
+
+            <tbody>
+                        <tr>
+                            <td>sao paulo</td>
+                            <td class="num"> 45 919 049</td>
+                        </tr>
+
+                        <tr>
+                            <td>Minas</td>
+                            <td class="num"> 28 116 031</td>
+                        </tr>
+
+                        <tr>
+                            <td>Bahia</td>
+                            <td class="num"> 12 250 019</td>
+                        </tr>
+
+                        <tr>
+                            <td>Bahia</td>
+                            <td class="num"> 12 250 019</td>
+                        </tr>
+
+                        <tr>
+                            <td>Bahia</td>
+                            <td class="num"> 12 250 019</td>
+                        </tr>
+
+                        <tr>
+                            <td>Bahia</td>
+                            <td class="num"> 12 250 019</td>
+                        </tr>
+            </tbody>
+
+            <tfoot>
+                        <tr>
+                                <th scope="row">total de habitantes</th>
+                                <td class="num"><strong>295 565 955</strong></td>
+                        </tr>
+            </tfoot>
+        </table>
+
+        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores debitis optio enim facere ratione possimus nesciunt tempora sit, aliquid dolore dolorem quam pariatur eveniet eaque reprehenderit neque velit quod. Architecto!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet, deserunt incidunt eos mollitia minima excepturi soluta? Earum praesentium esse similique alias cum aspernatur nihil delectus aliquid, nesciunt suscipit cupiditate. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores debitis optio enim facere ratione possimus nesciunt tempora sit, aliquid dolore dolorem quam pariatur eveniet eaque reprehenderit neque velit quod. Architecto!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet, deserunt incidunt eos mollitia minima excepturi soluta? Earum praesentium esse similique alias cum aspernatur nihil delectus aliquid, nesciunt suscipit cupiditate. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores debitis optio enim facere ratione possimus nesciunt tempora sit, aliquid dolore dolorem quam pariatur eveniet eaque reprehenderit neque velit quod. Architecto!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet, deserunt incidunt eos mollitia minima excepturi soluta? Earum praesentium esse similique alias cum aspernatur nihil delectus aliquid, nesciunt suscipit cupiditate. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores debitis optio enim facere ratione possimus nesciunt tempora sit, aliquid dolore dolorem quam pariatur eveniet eaque reprehenderit neque velit quod. Architecto!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet, deserunt incidunt eos mollitia minima excepturi soluta? Earum praesentium esse similique alias cum aspernatur nihil delectus aliquid, nesciunt suscipit cupiditate. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores debitis optio enim facere ratione possimus nesciunt tempora sit, aliquid dolore dolorem quam pariatur eveniet eaque reprehenderit neque velit quod. Architecto!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet, deserunt incidunt eos mollitia minima excepturi soluta? Earum praesentium esse similique alias cum aspernatur nihil delectus aliquid, nesciunt suscipit cupiditate. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores debitis optio enim facere ratione possimus nesciunt tempora sit, aliquid dolore dolorem quam pariatur eveniet eaque reprehenderit neque velit quod. Architecto!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet, deserunt incidunt eos mollitia minima excepturi soluta? Earum praesentium esse similique alias cum aspernatur nihil delectus aliquid, nesciunt suscipit cupiditate. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores debitis optio enim facere ratione possimus nesciunt tempora sit, aliquid dolore dolorem quam pariatur eveniet eaque reprehenderit neque velit quod. Architecto!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet, deserunt incidunt eos mollitia minima excepturi soluta? Earum praesentium esse similique alias cum aspernatur nihil delectus aliquid, nesciunt suscipit cupiditate. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores debitis optio enim facere ratione possimus nesciunt tempora sit, aliquid dolore dolorem quam pariatur eveniet eaque reprehenderit neque velit quod. Architecto!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet, deserunt incidunt eos mollitia minima excepturi soluta? Earum praesentium esse similique alias cum aspernatur nihil delectus aliquid, nesciunt suscipit cupiditate. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores debitis optio enim facere ratione possimus nesciunt tempora sit, aliquid dolore dolorem quam pariatur eveniet eaque reprehenderit neque velit quod. Architecto!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet, deserunt incidunt eos mollitia minima excepturi soluta? Earum praesentium esse similique alias cum aspernatur nihil delectus aliquid, nesciunt suscipit cupiditate. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores debitis optio enim facere ratione possimus nesciunt tempora sit, aliquid dolore dolorem quam pariatur eveniet eaque reprehenderit neque velit quod. Architecto!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet, deserunt incidunt eos mollitia minima excepturi soluta? Earum praesentium esse similique alias cum aspernatur nihil delectus aliquid, nesciunt suscipit cupiditate. </p>
+
+
     </main>
 
     <footer><a href="https://www.youtube.com/channel/UC743uIOkw60kD0TeztPD1Uw" target="_blank"><p class="alfanerd">Alfa Nerd</p></a>
@@ -33,5 +212,7 @@
         <p>Site de pesquisa e noticia em geral</p>
        
     </footer>
+
+    
 </body>
 </html>
