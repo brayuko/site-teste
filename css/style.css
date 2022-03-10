@@ -167,6 +167,7 @@ nav {
  nav > a {
     color: var(--cor0);
     text-shadow: 1px 1px 0px var(--cor6);
+    font-size: 2.7vw;
     padding: 10px;
     border-radius: 5px;
     text-decoration: none;
