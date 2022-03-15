@@ -99,8 +99,8 @@ html, body {
 header {/*linear-gradient(var(--cor8), var(--cor6));*/
     background-image: url('../image/capaAlfaNerd2.png');
     margin: 0px;
-    padding: 25px 0px 35px 0px;
-    padding-bottom: 125px;
+    padding: 5px 0px 0px 135px;
+    padding-bottom: 45px;
     position: ;
     background-repeat: no-repeat;
     background-size: cover; 
@@ -136,6 +136,7 @@ header p {
     text-align: center;
     margin: 0px;
     padding: 0px;
+    padding-bottom: 0px;
     font-size: 3vw;
     font-weight: bold;
     
