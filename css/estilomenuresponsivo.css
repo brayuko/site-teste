@@ -1,0 +1,391 @@
+@charset "UTF-8"; /*=============configuraçao estrutura================*/
+
+@font-face {
+  font-family: 'alfa';
+  src: url('../font/SmoochSans.ttf');
+}
+
+@font-face {
+  font-family: 'destaque';
+  src: url('../font/JosefinSans.ttf');
+}
+
+
+:root {
+  --cor0: #ffffff;
+  --cor1: #ccfaa1;
+  --cor2: #434e39d7;
+  --cor3: #43bddbd2;
+  --cor4: #F58634;
+  --cor5: rgba(58, 58, 58, 0.808);
+  --cor6: black;
+  --cor7: #57A695;
+  --cor8: #687675;
+  --cor9: #606062;
+  --cor10: #6A8787;
+
+  --fonte-texto: 'arial', verdana, helvetica;
+  --fonte-destaque: 'destaque', sem serifa;
+  --fonte-header: 'alfa', Courier, monospace;
+}
+body {/*==============================Corpo do Site============================*/
+  background-color: var(--cor8);
+  
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.header-1 {/*============================Cabeçalho do Site=======================*/
+  background-image: url('../img/AlfaNerd.png');
+  width: 100%;
+  height:275px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.logoheader1 {
+  margin: 0px;
+  padding: 60px;
+  float: left;
+  background-size: cover;
+}
+
+header {
+  background-image: linear-gradient(var(--cor8), var(--cor6));
+    width: 100%;
+    height:35px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: sticky;
+    left: 0;
+    top: 0;
+}
+
+a {/*=============================Links do Menu Responsivo====================*/
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.logo {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.redes-sociais ul li {/*===================Link redes Sociais=================*/
+  margin-left:10px;
+  display: inline-block;
+  /*float: left;*/
+  list-style: none;
+ /* border: 5px solid;*/
+}
+.redes-sociais {
+  padding-right: 1px;
+  padding-top: 1px;
+  margin-top: 225px;
+  margin-right: 5px;
+  position: absolute;
+  width: 35%;
+  float: right;/*
+  border: 5px solid orange;*/
+}
+main img {/*=========================imagens dentro do main e h1 e p===============*/
+  width: 45%;
+}
+h1 {
+  padding-left: 10px;
+  padding-top: 45px;
+}
+p {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+main {/*==============================Conteudo do Site============================*/
+  /*background: url("bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 92vh;*/
+   max-width: 1000px;
+    min-width: 375px;
+    background-color: var(--cor0);
+    margin: 0 auto;
+     position: ;
+     margin-top:1px;
+}
+.container {
+  position: relative;
+}
+
+#image {
+  position: absolute;
+}
+
+#texto {
+  position: absolute;    
+  font-size: 18px;
+  font-weight: bold;
+  left: 15px;
+  top: 10px;
+  color: var(--cor0);
+  text-shadow: 1px 1px 0px var(--cor6);
+}
+
+.container {
+   width: 100px;
+   height: 100px;
+   overflow: hidden;
+   border: 0px solid #000;
+}
+
+.container {
+   width: 80%;
+   height: 80%;
+   -webkit-transition: -webkit-transform .6s ease;
+   transition: transform .6s ease;
+}
+
+.container:hover img{
+   -webkit-transform: scale(1.1);
+   transform: scale(1.1);
+}
+/*==============================Aqui Começa o menu interativo====================*/
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  background: #23232e;
+  height: 8vh;
+}
+
+
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: #23232e;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+/* ===========================Aqui começa as seçoes====================================*/
+section {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  line-height:2em;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: var(--fonte-estilo);
+  
+}
+
+section.padrao {
+  background-color: white;
+  color: black;
+  text-align: justify;
+  padding: 0px;
+  margin: 0px;
+  line-height:1.5em;
+}
+
+section.imagem {
+  background-color: darkgrey;
+  color: white;
+  text-align: justify;
+  box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.774);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+section.normal {
+  background-color: white;
+  color: black;
+  text-align: justify;
+}
+
+section.imagem > p {
+  
+  display: inline-block;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.555);
+  padding-right: 30px;
+  text-align: justify;
+  padding-bottom: 2em;
+  text-shadow: 1px 1px 0px black;
+}
+
+section.normal > p {
+  padding-bottom: 2em;
+  background-color: white;
+  padding-right: 30px;
+  text-align: justify;
+}
+
+section#img01 {
+  background-image: url('..//img/esquadrao.jpg');
+  background-position: right center;
+}
+
+section#img02 {
+  background-image: url('..//img/ultimatum.jpg');
+  background-position: right center;
+  
+}
+
+section#img03 {
+  background-image: url('..//img/ultimatum.jpg');
+  background-position: right center;
+  
+}
+
+section#sobrenos {
+  background-image: url('..//img/capaAlfaNerd.png');
+  background-position: right center;
+  
+}
+/* =====================container div com animaçao de zoom de imagem==================*/
+.container {
+  position: relative;
+}
+
+#image {
+  position: absolute;
+}
+
+#texto {
+  position: absolute;    
+  font-size: 18px;
+  font-weight: bold;
+  left: 15px;
+  top: 10px;
+  color: var(--cor0);
+  text-shadow: 1px 1px 0px var(--cor6);
+}
+
+.container {
+   width: 100px;
+   height: 100px;
+   overflow: hidden;
+   border: 0px solid #000;
+}
+
+.container {
+   width: 80%;
+   height: 80%;
+   -webkit-transition: -webkit-transform .6s ease;
+   transition: transform .6s ease;
+}
+
+.container:hover img{
+   -webkit-transform: scale(1.1);
+   transform: scale(1.1);
+}
+/* =====================aqui começa o rodape==================*/
+footer {
+  background-image: linear-gradient(var(--cor5), var(--cor6));
+  padding: 10px 0px 100px 15px; 
+  font-family: var(--fonte-destaque);;      
+}
+footer a:hover {
+  color: var(--cor1);
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bolder;
+  transition-duration: .5s;
+}
+a {
+  text-decoration: none;
+}
+.alfanerd {
+  color: var(--cor1);    
+  text-shadow: 2px 2px 0px var(--cor6);
+  text-align: center;
+  font-weight:bolder;
+  font-size: 1.5em;    
+  margin-top: 10px;
+  margin: 0px 0px 1px 0px;
+}
+
+
+footer p {
+  color: var(--cor0);
+  font-weight:normal;
+  font-size: 0.8em;
+  text-shadow: 2px 2px 0px var(--cor6);
+  text-align: center;
+  font-family: var(--fonte-texto);
+}
