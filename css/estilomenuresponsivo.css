@@ -46,14 +46,16 @@ body {/*==============================Corpo do Site============================*
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  z-index: 99; /*ultilizar quando a imagem passa por cima do menu fixo*/
 }
 .logoheader1 {
+  color: var(--cor4);
   margin: 0px;
-  padding: 60px;
-  float: left;
+  padding: 16px;
+  float: left ;
+  text-align: center;
   background-size: cover;
 }
-
 header {
   background-image: linear-gradient(var(--cor8), var(--cor6));
     width: 100%;
@@ -63,6 +65,7 @@ header {
     position: sticky;
     left: 0;
     top: 0;
+    z-index: 99; /*ultilizar quando a imagem passa por cima do menu fixo*/
 }
 
 a {/*=============================Links do Menu Responsivo====================*/
@@ -80,82 +83,7 @@ a:hover {
   text-transform: uppercase;
   letter-spacing: 4px;
 }
-.redes-sociais ul li {/*===================Link redes Sociais=================*/
-  margin-left:10px;
-  display: inline-block;
-  /*float: left;*/
-  list-style: none;
- /* border: 5px solid;*/
-}
-.redes-sociais {
-  padding-right: 1px;
-  padding-top: 1px;
-  margin-top: 225px;
-  margin-right: 5px;
-  position: absolute;
-  width: 35%;
-  float: right;/*
-  border: 5px solid orange;*/
-}
-main img {/*=========================imagens dentro do main e h1 e p===============*/
-  width: 45%;
-}
-h1 {
-  padding-left: 10px;
-  padding-top: 45px;
-}
-p {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-main {/*==============================Conteudo do Site============================*/
-  /*background: url("bg.jpg") no-repeat center center;
-  background-size: cover;
-  height: 92vh;*/
-   max-width: 1000px;
-    min-width: 375px;
-    background-color: var(--cor0);
-    margin: 0 auto;
-     position: ;
-     margin-top:1px;
-}
-.container {
-  position: relative;
-}
-
-#image {
-  position: absolute;
-}
-
-#texto {
-  position: absolute;    
-  font-size: 18px;
-  font-weight: bold;
-  left: 15px;
-  top: 10px;
-  color: var(--cor0);
-  text-shadow: 1px 1px 0px var(--cor6);
-}
-
-.container {
-   width: 100px;
-   height: 100px;
-   overflow: hidden;
-   border: 0px solid #000;
-}
-
-.container {
-   width: 80%;
-   height: 80%;
-   -webkit-transition: -webkit-transform .6s ease;
-   transition: transform .6s ease;
-}
-
-.container:hover img{
-   -webkit-transform: scale(1.1);
-   transform: scale(1.1);
-}
-/*==============================Aqui Começa o menu interativo====================*/
+/*====================================================Aqui Começa o menu interativo celular===============================================*/
 nav {
   display: flex;
   justify-content: space-around;
@@ -164,8 +92,6 @@ nav {
   background: #23232e;
   height: 8vh;
 }
-
-
 
 .nav-list {
   list-style: none;
@@ -242,7 +168,137 @@ nav {
 .mobile-menu.active .line3 {
   transform: rotate(45deg) translate(-5px, -7px);
 }
-/* ===========================Aqui começa as seçoes====================================*/
+.redes-sociais ul li {/*===================Link redes Sociais=================*/
+  margin-left:2px;
+  display: inline-block;
+  /*float: left;*/
+  list-style: none;
+ /* border: 5px solid;*/
+}
+.redes-sociais {
+  padding-right: 1px;
+  padding-left:5px;
+  padding-top: 1px;
+  margin-top: 225px;
+  margin-right: 5px;
+  position: absolute;
+  width: 35%;
+  float: right;/*
+  border: 5px solid orange;*/
+}
+main img {/*=========================imagens dentro do main e h1 e p===============*/
+  width: 45%;
+}
+h1 {
+  padding-left: 10px;
+  padding-top: 45px;
+}
+h2 {
+  padding-left: 10px;
+  padding-top: 45px;
+}
+p {
+  padding-left: 10px;
+  padding-right: 10px;
+  
+}
+main {/*==============================Conteudo do main============================*/
+  /*background: url("bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 92vh;*/
+   max-width: 1000px;
+    min-width: 320px;
+    background-color: var(--cor0);
+    margin: 0 auto;
+     position: ;
+     margin-top:1px;
+}
+  div.quadrado {/*===================conteudo do site div artigos=========================*/
+   display: inline-block;
+   border: 1px solid black;
+   border-radius: 10px;
+   background-color: lightgrey;
+   width:300px;
+   height:300px;
+   
+}
+
+div#q1 {
+ background-image: url('../img/nick10.jpg');
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: right center;
+}
+
+div#q2 {
+ background-image: url('../img/the-boys.jpg');
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center center;
+  /* background-image: linear-gradient(to bottom, yellow,red);*/
+}
+
+div#q3 {
+   background-image: url('../img/sonic.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+}
+.artigos {
+  padding-top: 3px;
+  padding-left: 10px;
+}
+.linkimagem {
+  padding-left: 10px;
+}
+.artigo-h1 {
+  color: var(--cor4);
+  font-size: min(1.2em, 3.9vw);
+  text-align: left center;
+  padding-bottom: 5px;
+  margin-right: 50px;
+}
+#artigo-p {
+  color: var(--cor6);
+}
+.imgartigo {
+
+}/*========================================div fim========================================*/
+/*===============================imagem e video responsivo==================================*/
+main img {
+  width: 50%;
+  height: 50%;
+  padding-left: 10px;    
+}
+main img.pequena {
+  max-width: 350px;
+  display: block;
+  margin: auto;
+}
+.video {
+ 
+}
+div.video {
+  background-color: var(--cor6);
+  margin: 15px 0px 15px 0px;
+  padding: 10px;
+  padding-bottom: 49%;
+  position: relative;
+}
+div.video > iframe {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+}
+
+div.picture {
+  width: 100%;
+  height: 100%;
+  text-align:  right;
+}
+/* ========================Aqui começa as seçoes de paralax====================================*/
 section {
   padding-top: 10vh;
   padding-bottom: 10vh;
@@ -256,7 +312,7 @@ section {
 section.padrao {
   background-color: white;
   color: black;
-  text-align: justify;
+  text-align: left;
   padding: 0px;
   margin: 0px;
   line-height:1.5em;
@@ -318,6 +374,14 @@ section#sobrenos {
   
 }
 /* =====================container div com animaçao de zoom de imagem==================*/
+
+.container {
+  padding-left: 10px;
+  padding-right: 100px;
+  padding-bottom: 1px;
+  padding:0px;
+  margin: 0px;  
+}
 .container {
   position: relative;
 }
