@@ -116,7 +116,7 @@ nav {
   transition: 0.3s;
 }
 
-@media (max-width: 999px) {
+@media (max-width: 1000px) {
   body {
     overflow-x: hidden;
   }
@@ -124,8 +124,8 @@ nav {
     position: absolute;
     top: 8vh;
     right: 0;
-    width: 50vw;
-    height: 92vh;
+    width: 40vw;
+    height: 60vh;
     background: #23232e;
     flex-direction: column;
     align-items: center;
@@ -207,7 +207,7 @@ main {/*==============================Conteudo do main==========================
   background-size: cover;
   height: 92vh;*/
    max-width: 1000px;
-    min-width: 320px;
+    min-width: 375px;
     background-color: var(--cor0);
     margin: 0 auto;
      position: ;
