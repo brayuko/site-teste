@@ -116,7 +116,7 @@ nav {
   transition: 0.3s;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 1000px) {
   body {
     overflow-x: hidden;
   }
@@ -140,7 +140,7 @@ nav {
   .mobile-menu {
     display: block;
   }
-}
+  }
 
 .nav-list.active {
   transform: translateX(0);
@@ -263,6 +263,24 @@ div#q3 {
 }
 .imgartigo {
 
+}
+.post {
+  width: 400px;
+  border: 2px solid;
+  
+}
+.postimg1 {
+  border: 5px solid orange;
+  position: relative;
+  display: contents;
+  margin: 0;
+  padding:0;
+}
+.postimg2 {
+  border: 1px solid;
+  display: contents;
+  margin: 0;
+  padding: 0;
 }/*========================================div fim========================================*/
 /*===============================imagem e video responsivo==================================*/
 main img {
