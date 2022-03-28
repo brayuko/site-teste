@@ -141,8 +141,8 @@ nav {
     display: block;
   }
   .redes-sociais {
-    position: ;
-    border: 5px solid orange;
+    position: ;/*
+    border: 5px solid orange;*/
   }
   
   }
@@ -188,7 +188,7 @@ nav {
   margin-right: 5px;
   position: absolute;
   width: 40%;
-  float: right;
+  float: right;/*
   border: 5px solid orange;*/
 }
 main img {/*=========================imagens dentro do main e h1 e p===============*/
