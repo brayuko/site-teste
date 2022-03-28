@@ -116,7 +116,7 @@ nav {
   transition: 0.3s;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 400px) {
   body {
     overflow-x: hidden;
   }
@@ -125,7 +125,7 @@ nav {
     top: 8vh;
     right: 0;
     width: 40vw;
-    height: 60vh;
+    height: 45vh;
     background: #23232e;
     flex-direction: column;
     align-items: center;
@@ -140,6 +140,11 @@ nav {
   .mobile-menu {
     display: block;
   }
+  .redes-sociais {
+    position: ;
+    border: 5px solid orange;
+  }
+  
   }
 
 .nav-list.active {
@@ -182,8 +187,8 @@ nav {
   margin-top: 225px;
   margin-right: 5px;
   position: absolute;
-  width: 35%;
-  float: right;/*
+  width: 40%;
+  float: right;
   border: 5px solid orange;*/
 }
 main img {/*=========================imagens dentro do main e h1 e p===============*/
