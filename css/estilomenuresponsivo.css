@@ -197,14 +197,19 @@ main img {/*=========================imagens dentro do main e h1 e p============
 h1 {
   padding-left: 10px;
   padding-top: 45px;
+  padding-bottom:10px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 h2 {
   padding-left: 10px;
   padding-top: 45px;
+  padding-bottom:10px;
+  font-family: var(--fonte-padrao);
 }
 h3 {
   padding-left: 10px;
   padding-top: 45px;
+  padding-bottom:10px;
 }
 p {
   padding-left: 10px;
@@ -216,20 +221,23 @@ main {/*==============================Conteudo do main==========================
   background-size: cover;
   height: 92vh;*/
    max-width: 1000px;
-    min-width: 375px;
+    min-width: 400px;
     background-color: var(--cor0);
     margin: 0 auto;
      position: ;
      margin-top:1px;
 }
   div.quadrado {/*===================conteudo do site div artigos=========================*/
-   display: inline-block;
-   border: 1px solid black;
+   display:inline-block ;
+   border: 2px solid white;
    border-radius: 10px;
    background-color: lightgrey;
    width:300px;
    height:300px;
-   
+   overflow:auto;
+}
+section.artigopost {
+  padding-left: 35px;
 }
 
 div#q1 {
@@ -237,6 +245,7 @@ div#q1 {
  background-repeat: no-repeat;
  background-size: cover;
  background-position: right center;
+  float: left;
 }
 
 div#q2 {
@@ -245,6 +254,7 @@ div#q2 {
  background-size: cover;
  background-position: center center;
   /* background-image: linear-gradient(to bottom, yellow,red);*/
+  float: left;
 }
 
 div#q3 {
@@ -252,12 +262,14 @@ div#q3 {
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center center;
+   float: left;
 }
 div#q4 {
   background-image: url('../img/dragon-ball-filme-adiado.jpg') ;
   background-repeat: no-repeat;
   background-size:cover ;
   background-position: center;
+  float: left;
 }
 
 div#q5 {
@@ -266,19 +278,19 @@ div#q5 {
   background-size:cover ;
   background-position: center;
 }
-.artigos {
-  padding-top: 3px;
-  padding-left: 10px;
+.artigopost {
 }
+
 .linkimagem {
   padding-left: 10px;
 }
 .artigo-h1 {
-  color: var(--cor4);
+  color: var(--cor0);
+  background-color: rgba(0, 0, 0, 0.548);
   font-size: min(1.2em, 3.9vw);
-  text-align: left center;
+  text-align: center;
   padding-bottom: 5px;
-  margin-right: 50px;
+  margin-right: 0px;
 }
 #artigo-p {
   color: var(--cor6);
@@ -429,7 +441,7 @@ section#img04 {
   }
 
   section#img05 {
-    background-image: url('..//img/kof.jpg');
+    background-image: url('..//img/thumb-rugal.png');
     background-position: right center;
     }
 
