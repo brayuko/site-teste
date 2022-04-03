@@ -202,6 +202,10 @@ h2 {
   padding-left: 10px;
   padding-top: 45px;
 }
+h3 {
+  padding-left: 10px;
+  padding-top: 45px;
+}
 p {
   padding-left: 10px;
   padding-right: 10px;
@@ -251,6 +255,13 @@ div#q3 {
 }
 div#q4 {
   background-image: url('../img/dragon-ball-filme-adiado.jpg') ;
+  background-repeat: no-repeat;
+  background-size:cover ;
+  background-position: center;
+}
+
+div#q5 {
+  background-image: url('../img/kof.jpg') ;
   background-repeat: no-repeat;
   background-size:cover ;
   background-position: center;
@@ -415,8 +426,12 @@ section#img03 {
 section#img04 {
   background-image: url('..//img/posterdbz.jpg');
   background-position: right center;
-  
-}
+  }
+
+  section#img05 {
+    background-image: url('..//img/kof.jpg');
+    background-position: right center;
+    }
 
 section#sobrenos {
   background-image: url('..//img/capaAlfaNerd.png');
