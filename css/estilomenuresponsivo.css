@@ -278,6 +278,13 @@ div#q5 {
   background-size:cover ;
   background-position: center;
 }
+
+div#q6 {
+  background-image: url('../img/morbius.jpeg') ;
+  background-repeat: no-repeat;
+  background-size:cover ;
+  background-position: right center;
+}
 .artigopost {
 }
 
@@ -445,6 +452,16 @@ section#img04 {
     background-position: right center;
     }
 
+    section#img06 {
+      background-image: url('..//img/morbius.jpeg');
+       background-size: cover;
+      }
+
+      section#img07 {
+        background-image: url('..//img/morbius1.jpg' );
+        background-size: cover;
+        
+        }
 section#sobrenos {
   background-image: url('..//img/capaAlfaNerd.png');
   background-position: right center;
