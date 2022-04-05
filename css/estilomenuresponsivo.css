@@ -24,9 +24,9 @@
   --cor9: #606062;
   --cor10: #6A8787;
 
-  --fonte-texto: 'arial', verdana, helvetica;
-  --fonte-destaque: 'destaque', sem serifa;
-  --fonte-header: 'alfa', Courier, monospace;
+  --fonte-texto: 'Arial', verdana, helvetica;
+  --fonte-destaque: 'destaque', Arial,sans-serif;
+  --fonte-header: 'alfa', Arial, sans-serif;
 }
 body {/*==============================Corpo do Site============================*/
   background-color: var(--cor8);
@@ -196,25 +196,31 @@ main img {/*=========================imagens dentro do main e h1 e p============
 }
 h1 {
   padding-left: 10px;
+  padding-right:10px;
   padding-top: 45px;
-  padding-bottom:10px;
-  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom:2px;
+  margin: 0;
+  font-family: var(--fonte-destaque);
+  font-weight:bolder;
+  font-size: min(2.2em, 3.9vw);
 }
 h2 {
   padding-left: 10px;
-  padding-top: 45px;
+  padding-top: 25px;
   padding-bottom:10px;
-  font-family: var(--fonte-padrao);
+  font-family: var(--fonte-texto);
+  font-size: min(1.2em, 3.9vw);
 }
 h3 {
   padding-left: 10px;
   padding-top: 45px;
   padding-bottom:10px;
+  font-family: var(--fonte-texto);
 }
 p {
   padding-left: 10px;
   padding-right: 10px;
-  
+  font-family: var(--fonte-texto);
 }
 main {/*==============================Conteudo do main============================*/
   /*background: url("bg.jpg") no-repeat center center;
@@ -516,7 +522,7 @@ section#sobrenos {
 footer {
   background-image: linear-gradient(var(--cor5), var(--cor6));
   padding: 10px 0px 100px 15px; 
-  font-family: var(--fonte-destaque);;      
+  font-family: var(--fonte-destaque);      
 }
 footer a:hover {
   color: var(--cor1);
